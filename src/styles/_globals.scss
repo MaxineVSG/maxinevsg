@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  color: $color-dark;
+  width: 100%;
+  height:100%;
+}
+
+body {
+  background: linear-gradient(-45deg, rgb(211, 241, 233), rgb(3 143 116), rgb(1, 101, 79));
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:not(.nav__logo) {
+    position: relative;
+    &:hover {
+      font-weight: bold;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 4px;
+      bottom: -6px;
+      left: 0;
+      background-color: $color-dark;
+      transition: all 0.2s;
+    }
+    
+    &:hover:before{
+     width: 100%;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  position: sticky;
+  z-index: 30;
+  top: 0;
+}
+
+.container {
+  max-width: 65%;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+.section--highlight {
+  background-color: $color-light;
+  &__pink {
+    background-color: $color-highlight;
+  }
+}
+
+.testingFoo:nth-child(2n) {
+  flex-direction: reverse;
+}

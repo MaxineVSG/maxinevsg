@@ -1,0 +1,16 @@
+// Colors
+$color-primary: rgb(128, 230, 213);
+$color-light: hsla(170, 69%, 90%, 0.85);
+$color-dark: hsl(170, 67%, 10%);
+$color-highlight: hsl(358 58% 90% / 1);
+
+// Line height
+$base-line-height: 1.5 !default;
+$heading-line-height: 1.2 !default;
+
+// Spacing
+$spacing: $base-line-height * 1rem !default;
+$spacing-tiny: $spacing * 0.25 !default;
+$spacing-small: $spacing * 0.5 !default;
+$spacing-large: $spacing * 2 !default;
+$spacing-huge: $spacing * 4 !default;
