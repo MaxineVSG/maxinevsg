@@ -28,7 +28,7 @@ export default function Home() {
         <Image
           className="me bounce"
           priority
-          src="/images/me-illus-laptop.svg"
+          src="images/me-illus-laptop.svg"
           height={400}
           width={400}
           alt=""
