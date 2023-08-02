@@ -13,33 +13,29 @@ const Navbar = () => {
   const [activeIdx, setActiveIdx] = useState(-1);
 
   return (
-    <header>
-      <nav className="nav">
+    <header className="header">
         <Link href={"/"} className="nav__logo">
           <Logo height="35" width="70"/>
         </Link>
-        <div
-          onClick={() => setNavActive(!navActive)}
-          className={`nav__menu-bar`}
-        >
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div className={`${navActive ? "active" : ""} nav__menu-list`}>
-          {menuList.map((menu, idx) => (
-            <div
-              onClick={() => {
-                setActiveIdx(idx);
-                setNavActive(false);
-              }}
-              key={menu.text}
-            >
-              <NavItem active={activeIdx === idx} {...menu} />
-            </div>
-          ))}
-        </div>
-      </nav>
+
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+        <nav class="nav">
+            <ul class="menu">
+              {menuList.map((menu, idx) => (
+              <li
+                onClick={() => {
+                  setActiveIdx(idx);
+                  setNavActive(false);
+                }}
+                key={menu.text}
+              >
+                <NavItem active={activeIdx === idx} {...menu} />
+              </li>
+            ))}
+            </ul>
+        </nav>
     </header>
   );
 };
