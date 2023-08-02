@@ -73,3 +73,9 @@ ul {
     background-color: $color-highlight;
   }
 }
+
+@media (max-width: $md) {
+  .container {
+    max-width: 85%;
+  }
+}

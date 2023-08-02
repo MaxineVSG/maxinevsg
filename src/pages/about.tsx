@@ -22,19 +22,21 @@ export default function About() {
       <section className="section--highlight__pink">
         <article className="container my-none py-large">
           <h1 className="text-heading pb-small slide-up">Skills</h1>
-          <div className="flex flex--space-between">
+          <div className="flex flex--wrap">
             {skills.images.map((image) => {
-              return <Image
-                src={image.link}
-                height={150}
-                width={100}
-                alt={image.alt}
-              />
+              return <div className="mr-sm mb-sm">
+                <Image
+                  src={image.link}
+                  height={150}
+                  width={100}
+                  alt={image.alt}
+                />
+              </div>
             })}
           </div>
-          <div className="flex flex--space-between mt">
+          <div className="flex flex--wrap py">
             {skills.more.map((skill) => {
-              return <div className="boxed">
+              return <div className="boxed mr-sm mb-sm">
                 <span>{skill}</span>
               </div>
             })}
@@ -63,9 +65,9 @@ export default function About() {
       </section>
       <section className="container my">
         <h1 className="text-heading pb" data-aos="fade-up">Education</h1>
-        <div className="flex">
+        <div className="flex flex--column lg-flex--row">
           {education.map((item) => {
-            return <div key={item.name} className="py slide-up boxed boxed--large boxed--highlight mx-small flex flex--column text-center flex--center one-half">
+            return <div key={item.name} className="py slide-up boxed boxed--large boxed--highlight mx-small flex flex--column text-center flex--center one-whole md--mx">
               {item.desc}
               <h4 className="flex flex--grow my flex--center">{item.title}</h4>
               <div>

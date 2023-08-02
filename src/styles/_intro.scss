@@ -1,6 +1,6 @@
 .intro {
-  scale: 3;
-  margin-left: 15%;
+  scale: 1.5;
+  margin-left: 2rem;
 
   &--hi {
     margin-bottom: -3%;
@@ -46,7 +46,14 @@
   }
 }
 
-.me {
-  scale: 1.2;
-  margin-top: 10%;
+@media (min-width: $md) {
+  .intro {
+    scale: 3;
+    margin-left: 15%;
+  }
+
+  .me {
+    scale: 1.2;
+    margin-top: 10%;
+  }
 }

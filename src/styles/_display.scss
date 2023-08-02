@@ -1,0 +1,16 @@
+// Breakpoints
+// $xs: 0px;
+// $sm: 576px;
+// $md: 768px;
+// $lg: 992px;
+// $xl: 1200px;
+// $xxl: 1400px;
+
+@each $break-point, $size in $break-points {
+  @media only screen and (min-width: $size) {
+    .#{$break-point}--hidden { display: none !important; }
+    .#{$break-point}--visible-block { display: block !important; }
+    .#{$break-point}--visible-inline { display: inline !important; }
+    .#{$break-point}--visible-flex { display: flex !important; }
+  }
+}

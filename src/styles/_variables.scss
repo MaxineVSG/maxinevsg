@@ -1,8 +1,10 @@
 // Colors
 $color-primary: rgb(128, 230, 213);
+$color-secondary: rgb(1, 101, 79);
 $color-light: hsla(170, 69%, 90%, 0.85);
 $color-dark: hsl(170, 67%, 10%);
 $color-highlight: hsl(358 58% 90% / 1);
+$color-white: white;
 
 // Line height
 $base-line-height: 1.5 !default;
@@ -10,7 +12,24 @@ $heading-line-height: 1.2 !default;
 
 // Spacing
 $spacing: $base-line-height * 1rem !default;
-$spacing-tiny: $spacing * 0.25 !default;
-$spacing-small: $spacing * 0.5 !default;
-$spacing-large: $spacing * 2 !default;
-$spacing-huge: $spacing * 4 !default;
+$spacing-xs: $spacing * 0.25 !default;
+$spacing-sm: $spacing * 0.5 !default;
+$spacing-lg: $spacing * 2 !default;
+$spacing-xl: $spacing * 4 !default;
+
+// Breakpoints 
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$break-points: (
+  "xs": $xs,
+  "sm": $sm,
+  "md": $md,
+  "lg": $lg, 
+  "xl": $xl,
+  "xxl": $xxl,
+);

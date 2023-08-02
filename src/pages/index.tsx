@@ -1,6 +1,7 @@
 import Layout, { siteTitle } from '../components/layout'
 import Head from 'next/head'
 import Image from 'next/image';
+import IllustratedMe from "../components/IllustratedMe";
 
 export default function Home() {
   return (
@@ -25,15 +26,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <Image
-          className="me bounce"
-          priority
-          src="images/me-illus-laptop.svg"
-          height={400}
-          width={400}
-          alt=""
-        />
+        <IllustratedMe view="desktop" height="400" width="400"/>
       </section>
+      <IllustratedMe view="mobile" height="400" width="400" classes="one-whole"/>
     </Layout>
   )
 }
