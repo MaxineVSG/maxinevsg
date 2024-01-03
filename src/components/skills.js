@@ -10,11 +10,11 @@ let skills = {
   ],
   'more': [
     'Account Management',
+    'Agile',
     'Branding',
     'Photography',
     'Responsive Web Design',
-    'UI Design',
-    'UX Design',
+    'UX/UI Design',
   ]
 };
 
